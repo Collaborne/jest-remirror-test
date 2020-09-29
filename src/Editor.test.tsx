@@ -5,13 +5,9 @@ test('renders Editor', () => {
     add,
     view,
     nodes: { p, doc },
-  } = renderEditor();
+  } = renderEditor([]);
 
   add(doc(p('Hello world')));
 
-  expect(view.dom.innerHTML).toMatchInlineSnapshot(`
-    <p>
-      Hello world
-    </p>
-  `);
+  expect(view.dom.innerHTML).toMatchInlineSnapshot(`"<p>Hello world</p>"`);
 });
