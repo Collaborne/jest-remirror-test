@@ -49,6 +49,6 @@
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.10.5",
     "@babel/preset-typescript": "^7.10.4",
-    "jest-remirror": "^0.13.1"
+    "jest-remirror": "^1.0.0-next.42"
   }
 }
