@@ -22,13 +22,7 @@ describe('commands', () => {
 
 		expect(view.dom.innerHTML).toMatchInlineSnapshot(`
 			<p>
-				An
-				<span class="selection"
-					style="background: rgb(215, 215, 255);"
-				>
-					important
-				</span>
-				note
+				<div>1</div>
 			</p>
 		`);
 	});
