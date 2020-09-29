@@ -20,6 +20,6 @@ describe('commands', () => {
 		add(doc(p('')));
 		commands.createThing({ id: '1' });
 
-		expect(view.dom.innerHTML).toMatchInlineSnapshot('"<thing></thing><p><br></p>"');
+		expect(view.dom.innerHTML).toMatchInlineSnapshot('"<thing id=\\"1\\"></thing><p><br></p>"');
 	});
 });

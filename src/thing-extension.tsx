@@ -60,7 +60,10 @@ export class ThingExtension extends NodeExtension<ThingOptions> {
 					}),
 				},
 			],
-			toDOM: node => ['thing', extra.dom(node), 0],
+			toDOM: node => ['thing', {
+				...extra.dom(node),
+				id: node.attrs.id,
+			}, 0],
 		};
 	}
 
