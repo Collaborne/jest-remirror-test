@@ -1,5 +1,5 @@
 module.exports = {
-  setupFilesAfterEnv: ['jest-remirror/environment'],
+	setupFilesAfterEnv: ['jest-extended', 'jest-remirror/environment'],
   testEnvironment: 'jsdom', // Required for dom manipulation
 	transform: {
 		'^.+\\.[t|j]sx?$': 'babel-jest',
